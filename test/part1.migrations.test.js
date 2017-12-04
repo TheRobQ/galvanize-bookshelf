@@ -59,14 +59,14 @@ suite('part1 migrations', addDatabaseHooks(() => {
             type: 'timestamp with time zone',
             maxLength: null,
             nullable: false,
-            defaultValue: 'CURRENT_TIMESTAMP'
+            defaultValue: "CURRENT_TIMESTAMP"
           },
 
           updated_at: {
             type: 'timestamp with time zone',
             maxLength: null,
             nullable: false,
-            defaultValue: 'CURRENT_TIMESTAMP'
+            defaultValue: "CURRENT_TIMESTAMP"
           }
         };
 

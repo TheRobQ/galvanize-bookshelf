@@ -3,12 +3,24 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/bookshelf_dev'
+    connection: 'postgres://localhost/bookshelf_dev',
+    migration: {
+      connection: './migrations'
+    },
+    seed: {
+      connection: './seeds'
+    }
   },
 
   test: {
     client: 'pg',
-    connection: 'postgres://localhost/bookshelf_test'
+    connection: 'postgres://localhost/bookshelf_test',
+    migration: {
+      connection: './migrations'
+    },
+    seed: {
+      connection: './seeds'
+    }
   },
 
   production: {
